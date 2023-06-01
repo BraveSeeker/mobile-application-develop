@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tankTotal"
+    android:layout_width="match_parent"
+    android:theme="@style/NoTitle"
+    android:layout_height="match_parent"
+    android:background="@mipmap/gameback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            android:text="请选择4张卡片"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:id="@+id/choose_spade_01"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_01"
+                android:tag="1" />
+
+            <ImageView
+
+                android:id="@+id/choose_spade_02"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+
+                android:src="@mipmap/spade_02"
+                android:tag="2" />
+
+            <ImageView
+
+                android:id="@+id/choose_spade_03"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_03"
+                android:tag="3" />
+
+            <ImageView
+
+                android:id="@+id/choose_spade_04"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_04"
+                android:tag="4" />
+
+            <ImageView
+
+                android:id="@+id/choose_spade_05"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_05"
+                android:tag="5" />
+
+            <ImageView
+                android:id="@+id/choose_spade_06"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_06"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/choose_spade_07"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_07"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/choose_spade_08"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_08"
+                android:tag="8" />
+
+            <ImageView
+                android:id="@+id/choose_spade_09"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_09"
+                android:tag="9" />
+
+            <ImageView
+                android:id="@+id/choose_spade_10"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_10"
+                android:tag="10" />
+
+            <ImageView
+                android:id="@+id/choose_spade_11"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_11"
+                android:tag="11" />
+
+            <ImageView
+                android:id="@+id/choose_spade_12"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_12"
+                android:tag="12" />
+
+            <ImageView
+                android:id="@+id/choose_spade_13"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/spade_13"
+                android:tag="13" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/choose_heart_01"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_01"
+                android:tag="14" />
+
+            <ImageView
+                android:id="@+id/choose_heart_02"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_02"
+                android:tag="15" />
+
+            <ImageView
+                android:id="@+id/choose_heart_03"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_03"
+                android:tag="16" />
+
+            <ImageView
+                android:id="@+id/choose_heart_04"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_04"
+                android:tag="17" />
+
+            <ImageView
+                android:id="@+id/choose_heart_05"
+
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_05"
+                android:tag="18" />
+
+            <ImageView
+                android:id="@+id/choose_heart_06"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_06"
+                android:tag="19" />
+
+            <ImageView
+                android:id="@+id/choose_heart_07"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_07"
+                android:tag="20" />
+
+            <ImageView
+                android:id="@+id/choose_heart_08"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_08"
+                android:tag="21" />
+
+            <ImageView
+                android:id="@+id/choose_heart_09"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_09"
+                android:tag="22" />
+
+            <ImageView
+                android:id="@+id/choose_heart_10"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_10"
+                android:tag="23" />
+
+            <ImageView
+                android:id="@+id/choose_heart_11"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_11"
+                android:tag="24" />
+
+            <ImageView
+                android:id="@+id/choose_heart_12"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_12"
+                android:tag="25" />
+
+            <ImageView
+                android:id="@+id/choose_heart_13"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/heart_13"
+                android:tag="26" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/choose_club_01"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_01"
+                android:tag="27" />
+
+            <ImageView
+                android:id="@+id/choose_club_02"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_02"
+                android:tag="28" />
+
+            <ImageView
+                android:id="@+id/choose_club_03"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_03"
+                android:tag="29" />
+
+            <ImageView
+                android:id="@+id/choose_club_04"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_04"
+                android:tag="30" />
+
+            <ImageView
+                android:id="@+id/choose_club_05"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_05"
+                android:tag="31" />
+
+            <ImageView
+                android:id="@+id/choose_club_06"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_06"
+                android:tag="32" />
+
+            <ImageView
+                android:id="@+id/choose_club_07"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_07"
+                android:tag="33" />
+
+            <ImageView
+                android:id="@+id/choose_club_08"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_08"
+                android:tag="34" />
+
+            <ImageView
+                android:id="@+id/choose_club_09"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_09"
+                android:tag="35" />
+
+            <ImageView
+                android:id="@+id/choose_club_10"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_10"
+                android:tag="36" />
+
+            <ImageView
+                android:id="@+id/choose_club_11"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_11"
+                android:tag="37" />
+
+            <ImageView
+                android:id="@+id/choose_club_12"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_12"
+                android:tag="38" />
+
+            <ImageView
+                android:id="@+id/choose_club_13"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/club_13"
+                android:tag="39" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/choose_diamond_01"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_01"
+                android:tag="40" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_02"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_02"
+                android:tag="41" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_03"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_03"
+                android:tag="42" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_04"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_04"
+                android:tag="43" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_05"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_05"
+                android:tag="44" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_06"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_06"
+                android:tag="45" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_07"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_07"
+                android:tag="46" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_08"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_08"
+                android:tag="47" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_09"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_09"
+                android:tag="48" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_10"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_10"
+                android:tag="49" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_11"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="275dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_11"
+                android:tag="50" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_12"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_12"
+                android:tag="51" />
+
+            <ImageView
+                android:id="@+id/choose_diamond_13"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_length"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="chooseCards"
+                android:src="@mipmap/diamond_13"
+                android:tag="52" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/completeChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_main"
+            android:gravity="center"
+            android:onClick="submit"
+            android:textColor="@color/black"
+            android:text="确定"
+            android:textSize="25dp"
+             />
+
+    </LinearLayout>
+</LinearLayout>

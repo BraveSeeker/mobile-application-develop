@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/NoTitle"
+    android:background="@mipmap/gameback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="请通过四则运算将下列卡片计算成24点"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cardList4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/card1"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_length"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:onClick="usrClick"
+            android:src="@mipmap/card_back" />
+
+        <ImageView
+            android:id="@+id/card2"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_length"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:onClick="usrClick"
+            android:src="@mipmap/card_back" />
+
+        <ImageView
+            android:id="@+id/card3"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_length"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:onClick="usrClick"
+            android:src="@mipmap/card_back" />
+
+        <ImageView
+            android:id="@+id/card4"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_length"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:onClick="usrClick"
+            android:src="@mipmap/card_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="@dimen/btn_operation"
+            android:layout_height="@dimen/btn_operation"
+            android:backgroundTint="@color/blueSky"
+            android:clickable="false"
+            android:onClick="usrClick"
+            android:text="+"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bt_sub"
+            android:layout_width="@dimen/btn_operation"
+            android:layout_height="@dimen/btn_operation"
+            android:layout_marginLeft="@dimen/btn_operation_dis"
+            android:backgroundTint="@color/blueSky"
+            android:clickable="false"
+            android:onClick="usrClick"
+            android:text="-"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bt_mul"
+            android:layout_width="@dimen/btn_operation"
+            android:layout_height="@dimen/btn_operation"
+            android:layout_marginLeft="@dimen/btn_operation_dis"
+            android:backgroundTint="@color/blueSky"
+            android:clickable="false"
+            android:onClick="usrClick"
+
+            android:text="×"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bt_div"
+            android:layout_width="@dimen/btn_operation"
+            android:layout_height="@dimen/btn_operation"
+            android:layout_marginLeft="@dimen/btn_operation_dis"
+            android:backgroundTint="@color/blueSky"
+
+            android:clickable="false"
+            android:onClick="usrClick"
+            android:text="÷"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_num1"
+                android:layout_width="@dimen/card_width2"
+                android:layout_height="@dimen/card_length"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/teal_200"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:onClick="usrClick"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/cardNumSize" />
+
+            <Button
+                android:id="@+id/bt_num2"
+                android:layout_width="@dimen/card_width2"
+                android:layout_height="@dimen/card_length"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:onClick="usrClick"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/cardNumSize" />
+
+            <Button
+                android:id="@+id/bt_num3"
+                android:layout_width="@dimen/card_width2"
+                android:layout_height="@dimen/card_length"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:onClick="usrClick"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/cardNumSize" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前选中的数字："
+                android:textSize="@dimen/buttonTextSize" />
+
+            <TextView
+                android:id="@+id/seeNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/buttonTextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前选中的符号："
+                android:textSize="@dimen/buttonTextSize" />
+
+            <TextView
+                android:id="@+id/seeOpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/buttonTextSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="您的运算过程"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <TextView
+                android:id="@+id/textViewStep1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="@dimen/buttonTextSize" />
+
+            <TextView
+                android:id="@+id/textViewStep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="@dimen/buttonTextSize" />
+
+            <TextView
+                android:id="@+id/textViewStep3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="@dimen/buttonTextSize" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+
+        <Button
+            android:id="@+id/btn_showAnswer"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:backgroundTint="@color/yellow"
+            android:onClick="usrClick"
+            android:text="查看答案"
+            android:textColor="@color/black"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_randomStart"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/btn_operation_dis"
+            android:backgroundTint="@color/yellow"
+            android:onClick="usrClick"
+            android:text="随机一题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_selfInitial"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:backgroundTint="@color/yellow"
+            android:onClick="usrClick"
+            android:text="自定义数字"
+            android:textColor="@color/black"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_restart"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/btn_operation_dis"
+            android:backgroundTint="@color/yellow"
+            android:onClick="usrClick"
+            android:text="重新开始"
+            android:textColor="@color/black"
+            android:textSize="@dimen/buttonTextSize"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <CheckBox
+        android:id="@+id/box_isDeleteNoneSolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusedByDefault="true"
+        android:text="是否去除无解组合" />
+
+    <LinearLayout
+        android:id="@+id/text_answerArea"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="参考答案"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_answerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击查看答案以显示答案" />
+    </LinearLayout>
+
+
+</LinearLayout>

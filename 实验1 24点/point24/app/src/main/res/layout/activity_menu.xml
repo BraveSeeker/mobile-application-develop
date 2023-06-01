@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:hapticFeedbackEnabled="false"
+    android:theme="@style/NoTitle"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/gameback"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginVertical="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="挑战24点"
+            android:textSize="60dp" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_menuStart"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/blue_main"
+            android:onClick="menuClick"
+            android:text="开始游戏"
+            android:textColor="@color/black"
+            android:textSize="38dp"
+            android:textStyle="bold" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_selfInitial"-->
+        <!--            android:layout_width="@dimen/btn_width"-->
+
+        <!--            android:layout_height="@dimen/btn_height"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:backgroundTint="@color/yellow"-->
+        <!--            android:onClick="setCardByUser"-->
+        <!--            android:text="自定义数字"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="16dp"-->
+        <!--            android:textStyle="bold" />-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

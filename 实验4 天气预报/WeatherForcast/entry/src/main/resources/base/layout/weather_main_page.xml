@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:clickable="true"
+    ohos:focusable="focus_enable"
+    ohos:orientation="vertical"
+    ohos:background_element="$media:background2"
+    ohos:padding="15vp">
+
+    <TextField
+        ohos:id="$+id:city"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:clickable="false"
+        ohos:focusable="focus_disable"
+        ohos:text_color="$color:white"
+        ohos:text_font="HwChinese-medium"
+        ohos:text="  "
+        ohos:text_size="35fp"
+        />
+
+    <Text
+        ohos:id="$+id:today_detail_date"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="  "
+        ohos:text_size="20fp"
+        ohos:text_color="$color:white"
+        ohos:text_font="HwChinese-medium"
+        ohos:top_padding="15vp"
+        />
+
+    <DependentLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        >
+
+        <Text
+            ohos:id="$+id:today_digital"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="  "
+            ohos:text_color="$color:white"
+            ohos:text_font="HwChinese-medium"
+            ohos:text_size="70fp"
+            />
+
+        <Image
+            ohos:id="$+id:today_icon"
+            ohos:height="80vp"
+            ohos:width="80vp"
+            ohos:align_parent_right="true"
+            ohos:text_color="$color:white"
+            ohos:text_font="HwChinese-medium"
+            ohos:align_parent_top="true"
+            ohos:scale_mode="zoom_center"
+            />
+
+    </DependentLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:top_padding="15vp"
+        >
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="天气情况"
+            ohos:text_color="$color:white"
+            ohos:text_font="HwChinese-medium"
+            ohos:text_size="15fp"
+            />
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:text_color="$color:white"
+            ohos:text_font="HwChinese-medium"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:total_weight="5"
+            >
+
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:id="$+id:today_humidity"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="  "
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="20fp"
+                    />
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text="空气湿度"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:id="$+id:today_wind_scale"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text="  "
+                    ohos:text_size="20fp"
+                    />
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text="风速"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:id="$+id:today_wind_direction"
+                    ohos:height="match_content"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:width="match_content"
+                    ohos:text="  "
+                    ohos:text_size="20fp"
+                    />
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="风向"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:id="$+id:today_rain_precip"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text="  "
+                    ohos:text_size="20fp"
+                    />
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="降雨概率"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:id="$+id:today_rainfall"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="  "
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="20fp"
+                    />
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="降雨量(mm)"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:top_padding="15fp"
+        >
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="生活指数"
+            ohos:text_size="15fp"
+            ohos:text_color="$color:white"
+            ohos:text_font="HwChinese-medium"
+            />
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:total_weight="6"
+            >
+
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="洗车"
+                    ohos:text_size="18fp"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    />
+
+                <Text
+                    ohos:id="$+id:today_car_washing"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="  "
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text="穿衣"
+                    ohos:text_size="18fp"
+                    />
+
+                <Text
+                    ohos:id="$+id:today_dressing"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text="  "
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="感冒"
+                    ohos:text_size="18fp"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    />
+
+                <Text
+                    ohos:id="$+id:today_flu"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="  "
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="运动"
+                    ohos:text_size="18fp"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    />
+
+                <Text
+                    ohos:id="$+id:today_sport"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="  "
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="旅游"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="18fp"
+                    />
+
+                <Text
+                    ohos:id="$+id:today_travel"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="  "
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:weight="1"
+                >
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="紫外线"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text_size="18fp"
+                    />
+
+                <Text
+                    ohos:id="$+id:today_uv"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_color="$color:white"
+                    ohos:text_font="HwChinese-medium"
+                    ohos:text="  "
+                    ohos:text_size="12fp"
+                    />
+            </DirectionalLayout>
+
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:top_padding="15vp"
+        >
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="未来天气"
+            ohos:text_color="$color:white"
+            ohos:text_font="HwChinese-medium"
+            ohos:text_size="15fp"
+            />
+
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:directionLayout_itemList"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:top_padding="8vp"/>
+
+
+
+</DirectionalLayout>

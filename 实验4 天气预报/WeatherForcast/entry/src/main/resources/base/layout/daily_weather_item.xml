@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        >
+
+        <Image
+            ohos:id="$+id:daily_icon"
+            ohos:height="40vp"
+            ohos:width="40vp"
+            />
+
+        <DirectionalLayout
+            ohos:height="40vp"
+            ohos:width="match_parent"
+            ohos:alignment="center"
+            ohos:orientation="horizontal"
+            >
+
+
+                <Text
+                    ohos:id="$+id:daily_date"
+                    ohos:height="match_parent"
+                    ohos:width="40vp"
+                    ohos:text="今日"
+                    ohos:text_color="$color:white"
+                    ohos:text_size="15fp"
+                    />
+
+                <Text
+                    ohos:id="$+id:daily_weather"
+                    ohos:height="match_parent"
+                    ohos:width="70vp"
+                    ohos:text="  "
+                    ohos:text_color="$color:white"
+                    ohos:text_size="15fp"
+                    />
+
+
+                <Text
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text="降雨概率"
+                    ohos:text_color="$color:white"
+                    ohos:text_size="15fp"
+                    />
+
+                <Text
+
+                    ohos:id="$+id:daily_rain_potential"
+                    ohos:height="match_parent"
+                    ohos:width="40vp"
+                    ohos:text="  "
+                    ohos:text_color="$color:white"
+                    ohos:text_size="15fp"
+                    />
+
+            <Text
+                ohos:id="$+id:daily_temp"
+                ohos:height="match_parent"
+                ohos:width="70vp"
+                ohos:text="  "
+                ohos:layout_alignment="horizontal_center"
+                ohos:text_color="$color:white"
+                ohos:text_size="15fp"
+                />
+
+        </DirectionalLayout>
+    </DirectionalLayout>
+</DirectionalLayout>

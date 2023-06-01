@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_width" > 120dp</dimen>
+    <dimen name="btn_height" > 60dp</dimen>
+    <dimen name="btn_operation" > 80dp</dimen>
+    <dimen name="card_width" > 75dp</dimen>
+    <dimen name="card_width2" > 80dp</dimen>
+    <dimen name="card_length" > 115dp</dimen>
+    <dimen name="btn_operation_dis" > 10dp</dimen>
+    <dimen name="textSize1" > 20dp</dimen>
+    <dimen name="buttonTextSize" > 16dp</dimen>
+    <dimen name="textSize2" > 15dp</dimen>
+    <dimen name="cardNumSize" > 25dp</dimen>
+    <dimen name="layer1" > 20dp</dimen>
+
+</resources>

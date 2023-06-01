@@ -1,0 +1,14 @@
+{
+  "integer": [
+    {
+    "name": "integer_1",
+    "value": 100
+    },{
+    "name": "small_label",
+    "value": 100
+    },{
+    "name": "middle_label",
+    "value": 15
+    }
+  ]
+}

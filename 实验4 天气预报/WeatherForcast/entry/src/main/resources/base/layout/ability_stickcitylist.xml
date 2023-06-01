@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:padding="15vp">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+
+        <Button
+            ohos:id="$+id:stick_goBack"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="←"
+            ohos:text_size="40fp"
+            />
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:align_parent_right="true"
+            ohos:text="城市管理"
+            ohos:text_font="HwChinese-medium"
+            ohos:text_size="45fp"
+            />
+    </DirectionalLayout>
+<Text
+    ohos:id="$+id:stick_noCity"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:text="暂无收藏城市"
+    ohos:text_alignment="center"
+    ohos:text_size="25fp"
+
+    />
+
+    <ScrollView
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:id="$+id:stickCityList_layout"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:padding="10vp"
+            >
+
+        </DirectionalLayout>
+    </ScrollView>
+
+
+</DirectionalLayout>

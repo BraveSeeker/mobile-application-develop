@@ -1,0 +1,2 @@
+rootProject.name = 'AccountApp'
+include ':entry'
